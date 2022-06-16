@@ -9,6 +9,8 @@ const boxesEl = document.querySelector('#boxes');
 
 
 function createBoxes() {
+  const manyDivs = [];
+  
   for (let i = 1; i <= inputEl.value; i += 1) {
     const colorOfDiv = getRandomHexColor();
     
@@ -28,7 +30,7 @@ function destroyBoxes() {
   inputEl.value = null;
 }
 
-const manyDivs = [];
+
 
 btnCreateEl.addEventListener('click', createBoxes);
 btnDestroyEl.addEventListener('click', destroyBoxes)
