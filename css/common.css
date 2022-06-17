@@ -28,6 +28,8 @@ button {
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
 
   padding-top: 25px;
